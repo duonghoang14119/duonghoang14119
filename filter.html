@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách lọc</title>
+</head>
+<body>
+<h1>Danh sách sản phẩm</h1>
+
+<label for="filter">Lọc theo danh mục:</label>
+<select id="filter">
+    <option value="all">Tất cả</option>
+    <option value="danh-muc-1">Danh mục 1</option>
+    <option value="danh-muc-2">Danh mục 2</option>
+    <option value="danh-muc-3">Danh mục 3</option>
+</select>
+
+<ul id="product-list">
+    <li class="product danh-muc-1">Sản phẩm 1</li>
+    <li class="product danh-muc-2">Sản phẩm 2</li>
+    <li class="product danh-muc-3">Sản phẩm 3</li>
+    <li class="product danh-muc-1">Sản phẩm 4</li>
+    <li class="product danh-muc-2">Sản phẩm 5</li>
+    <li class="product danh-muc-3">Sản phẩm 6</li>
+</ul>
+
+
+
+<div class="danh-muc-tong-hop">
+    <ul>
+        <li>
+            <a href="#">Danh mục 1</a>
+            <div class="danh-muc-con">
+                <ul>
+                    <li><a href="#">Mục con 1</a></li>
+                    <li><a href="#">Mục con 2</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+    const filter = document.getElementById('filter');
+    const productList = document.getElementById('product-list');
+    const products = productList.getElementsByClassName('product');
+
+    filter.addEventListener('change', () => {
+        for (let i = 0; i < products.length; i++) {
+            const product = products[i];
+
+            if (filter.value === 'all' || product.classList.contains(filter.value)) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        }
+    });
+</script>
+</body>
+</html>

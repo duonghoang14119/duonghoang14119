@@ -20,9 +20,46 @@ p {
     background-size: cover;
     background-repeat: no-repeat; */
     /* background-attachment: fixed; */
-    background: red 
+    background: rgba(18, 172, 54, 0.62)
     url("https://images.unsplash.com/photo-1632260260864-caf7fde5ec36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Zmxhc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60") no-repeat center center; 
     width: 100vw;
     height: 100vh;
     /* no-repeat center center / fixed ; */
 }
+img {
+
+}
+
+.fronchu {
+    color: #c51818;
+    font-size: 50px;
+}
+.fronchu:hover{
+    color: #ffa400;
+}
+/*.form-test{*/
+/*    !*margin-bottom: 50px;*!*/
+/*    padding: 50px 20px;*/
+/*}*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px #c51818;
+}
+
+label, input, textarea {
+    margin: 10px 0;
+}
+
+
+
+/*.fronchu:active{*/
+/*    color: #ffa400;*/
+/*}*/
+/*.fronchu:visited{*/
+/*    color: #ffa400;*/
+/*}*/
