@@ -1,4 +1,5 @@
 <?php
+require_once dahinh::class;
 class buyBuy {
     protected function name(){
         return 'hello';

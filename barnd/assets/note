@@ -3,3 +3,7 @@
 // các thư viện sau khi được cài đặt sẽ nằm trong file vendor
 // không được sử dụng lênh composer update để cài đặtt thêm thư viện hoặc trong bất kỳ tình huống nào,
 // khi mới clone dự án về từ git thì cần chạy lệnh composer install, chạy lệnh composer require
+
+
+
+// nếu thêm từ final trước clas s, hoặc phương thức  thì sẽ ko kế thừa đc class đó
